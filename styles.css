@@ -1,13 +1,95 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background: #f5a623;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+  color: #d2691e;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #d2691e;
+}
+
+.hero-text p {
+  margin: 15px 0;
+}
+
+.btn {
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero-img img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.menu {
+  padding: 40px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 20px;
+  color: #d2691e;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-grid .item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-grid img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
