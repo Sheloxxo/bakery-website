@@ -29,6 +29,24 @@ nav a.active, nav a:hover {
   color: #d2691e;
 }
 
+nav ul {
+  list-style: none;     /* removes the bullet points */
+  margin: 0;
+  padding: 0;
+  text-align: center;   /* centers the menu */
+}
+
+nav ul li {
+  display: inline-block; /* makes items sit next to each other */
+  margin: 0 20px;        /* spacing between menu items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
 .hero {
   display: flex;
   align-items: center;

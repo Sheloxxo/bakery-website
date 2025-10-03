@@ -41,3 +41,5 @@ const menuData = [
     }
   });
   
+  // contact page specific
+console.log("Contact page loaded");
