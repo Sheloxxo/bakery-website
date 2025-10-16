@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #EEC6CA;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #f7d9dc;
   color: #333;
 }
 
@@ -9,13 +9,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #775253;
+  background-color: #a3797b;
   color: white;
   padding: 15px 40px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "Lobster", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 .brand {
@@ -25,8 +26,8 @@ body {
 }
 
 .logo-img {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   display: block;
 }
@@ -51,6 +52,10 @@ body {
 section {
   padding: 60px 20px;
   text-align: center;
+}
+
+h2 {
+  font-family: "Lobster Two", Georgia, "Times New Roman", Times, serif;
 }
 
 .menu-items {
@@ -112,12 +117,33 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 80px 20px; /* more whitespace around section */
 }
 
-.about-content h2,
-.about-content p {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 10px 16px;
-  border-radius: 8px;
-  backdrop-filter: blur(2px);
+.about-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.about-card h2,
+.about-card p {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.about-card h2 {
+  font-size: 2.2rem;
+}
+
+.about-card p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 520px;
+  text-wrap: balance;
 }
