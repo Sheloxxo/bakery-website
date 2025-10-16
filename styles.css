@@ -14,6 +14,10 @@ body {
   padding: 15px 40px;
 }
 
+.navbar.navbar--scrolled {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
 .logo {
   font-size: 2rem;
   font-family: "Lobster", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
@@ -105,6 +109,29 @@ h2 {
   border-radius: 8px;
   margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 12px;
+  background: rgba(163, 121, 123, 0.95);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms ease, visibility 250ms ease, transform 250ms ease;
+  transform: translateY(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .about-content {
