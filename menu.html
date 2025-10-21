@@ -20,6 +20,12 @@
         <li><a href="menu.html" class="active">Menu</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li class="cart-container">
+          <button class="cart-icon" id="cartIcon">
+            <img src="images/cart.webp" alt="Cart" class="cart-icon-img">
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -27,28 +33,55 @@
   <section class="menu-content">
     <h2>Our Menu</h2>
     <div class="menu-items">
-      <a href="fudgy-cake.html" class="item-link">
-        <div class="item">
-          <h3>fudgy cake</h3>
-          <p>$8</p>
-          <img src="images/cake.webp" alt="fudgy cake">
+      <div class="item">
+        <h3>fudgy cake</h3>
+        <p>$8</p>
+        <img src="images/cake.webp" alt="fudgy cake">
+        <div class="item-actions">
+          <a href="fudgy-cake.html" class="view-details">View Details</a>
+          <button class="add-to-cart" data-name="fudgy cake" data-price="8" data-image="images/cake.webp">Add to Cart</button>
         </div>
-      </a>
-      <a href="flaky-croissant.html" class="item-link">
-        <div class="item">
-          <h3>flaky croissant</h3>
-          <p>$6</p>
-          <img src="images/pastery.webp" alt="flaky croissant">
+      </div>
+      <div class="item">
+        <h3>flaky croissant</h3>
+        <p>$6</p>
+        <img src="images/pastery.webp" alt="flaky croissant">
+        <div class="item-actions">
+          <a href="flaky-croissant.html" class="view-details">View Details</a>
+          <button class="add-to-cart" data-name="flaky croissant" data-price="6" data-image="images/pastery.webp">Add to Cart</button>
         </div>
-      </a>
-      <a href="cinnamon-myway.html" class="item-link">
-        <div class="item">
-          <h3>cinamonn myway</h3>
-          <p>$4</p>
-          <img src="images/cinnamon.webp" alt="cinamonn myway">
+      </div>
+      <div class="item">
+        <h3>cinamonn myway</h3>
+        <p>$4</p>
+        <img src="images/cinnamon.webp" alt="cinamonn myway">
+        <div class="item-actions">
+          <a href="cinnamon-myway.html" class="view-details">View Details</a>
+          <button class="add-to-cart" data-name="cinamonn myway" data-price="4" data-image="images/cinnamon.webp">Add to Cart</button>
         </div>
-      </a>
+      </div>
     </div>
   </section>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty" id="cartEmpty">
+          <p>Your cart is empty</p>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display: none;">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

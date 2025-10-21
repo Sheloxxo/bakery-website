@@ -20,6 +20,12 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li class="cart-container">
+          <button class="cart-icon" id="cartIcon">
+            <img src="images/cart.webp" alt="Cart" class="cart-icon-img">
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -30,5 +36,26 @@
       <p>Bake by Shelo is the little dream of a computer science gradute wanting to see beauty through delicious pastries.</p>
     </div>
   </section>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty" id="cartEmpty">
+          <p>Your cart is empty</p>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display: none;">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
